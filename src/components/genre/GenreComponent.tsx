@@ -13,7 +13,7 @@ type Props = {
 const GenreComponent: FC<Props> = ({id, name, className}) => {
     const router = useRouter();
 
-    const params = parseInt(useSearchParams().toString().split('=')[1])
+    const currentGenreId = parseInt(useSearchParams().toString().split('=')[1])
 
     const changeGenreHandler = () => {
         router.replace('/genres' + "?" + createQueryString("with_genres", id.toString()))
@@ -22,7 +22,7 @@ const GenreComponent: FC<Props> = ({id, name, className}) => {
     return (
         <button
             onClick={changeGenreHandler}
-            className={params === id ? `${roboto.className} active-genre ${className}` : `${roboto.className} ${className}`}
+            className={currentGenreId === id ? `${roboto.className} active-genre ${className}` : `${roboto.className} ${className}`}
         >
             {name}
         </button>

@@ -22,7 +22,7 @@ const MoviePage: FC<Props> = async ({params}) => {
                 <h2>{movie.title}</h2>
                 <div className='movie-page-details-info'>
                     <div>
-                        <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="poster"/>
+                        <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`poster for ${movie.title}`}/>
                         <TrailerComponent trailerLink={trailerLink}/>
                     </div>
                     <MovieDescription movie={movie}/>

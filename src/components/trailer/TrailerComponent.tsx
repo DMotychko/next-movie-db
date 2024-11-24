@@ -12,7 +12,7 @@ const TrailerComponent: FC<Props> = ({trailerLink}) => {
         <div className='trailer-component'>
             <button className="trailer-btn" onClick={() => setModalVisible(true)}>
                 <span className="icon">▶</span>
-                Смотреть трейлер
+                Watch trailer
             </button>
             {
                 modalVisible ?

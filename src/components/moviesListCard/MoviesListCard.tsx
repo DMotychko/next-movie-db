@@ -10,11 +10,12 @@ type Props = {
     id: number
 }
 const MoviesListCard: FC<Props> = ({imageUrl, title, releaseDate, id}) => {
+    const dateMovie = new Date(releaseDate).getFullYear();
     return (
         <Link href={'/movie-' + id.toString()} className='movies-list-card-link' >
             <div className='movies-list-card'>
-                <img src={`https://image.tmdb.org/t/p/w500/${imageUrl}`} alt='posterMovie'/>
-                <h3 className={roboto.className}>{title} - {new Date(releaseDate).getFullYear()}</h3>
+                <img src={`https://image.tmdb.org/t/p/w500/${imageUrl}`} alt={`poster movie for ${title} - ${dateMovie}`}/>
+                <h3 className={roboto.className}>{title} - {dateMovie}</h3>
             </div>
         </Link>
     );

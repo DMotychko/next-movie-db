@@ -17,7 +17,7 @@ const GenresPage: FC<MyParams> = async ({searchParams}) => {
         <div>
             <GenresListComponent />
             <MoviesList movies={movies.results}/>
-            {movies.total_pages > 1 ? <PaginationComponent currentPage={movies.page} totalPages={movies.total_pages} /> : ''}
+            <PaginationComponent currentPage={movies.page} totalPages={movies.total_pages} />
         </div>
     );
 };

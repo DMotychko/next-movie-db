@@ -9,10 +9,10 @@ type Props = {
     children: React.ReactNode
 }
 const NavLinkComponent: FC<Props> = ({path, children}) => {
-    const url = usePathname()
+    const currentPathname = usePathname()
 
     return (
-        <Link href={path} className={url === path ? 'active-link-menu link-menu' : 'link-menu'}>{children}</Link>
+        <Link href={path} className={currentPathname === path ? 'active-link-menu link-menu' : 'link-menu'}>{children}</Link>
     );
 };
 
