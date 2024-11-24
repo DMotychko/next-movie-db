@@ -1,0 +1,21 @@
+.subtext h4 {
+    width: 130px;
+    font-size: 18px;
+    color: #c8c6c6;
+}
+.subtext p {
+    color: #c8c6c6;
+    font-size: 16px;
+    max-width: 500px;
+}
+.subtext {
+    display: flex;
+    gap: 0 40px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.subtext-rating {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+}

@@ -1,0 +1,25 @@
+.genre-btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 9px;
+    background-color: #d3d0d0;  /* Світлий сірий фон */
+    color: #333333;
+    font-size: 13.3px;
+    transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+.genre-btn:hover {
+    background-color: #878686;
+}
+.genre-btn.active-genre {
+    background-color: #878686;
+}
+.genre-for-movieDetails {
+    border: none;
+    color: #c8c6c6;
+    background-color: transparent;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.genre-for-movieDetails:hover {
+    color: #631818;
+}

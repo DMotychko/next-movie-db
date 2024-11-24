@@ -1,0 +1,14 @@
+.link-menu {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: color 0.2s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+.link-menu:hover {
+    color: #be8747;
+}
+.link-menu.active-link-menu {
+    color: #be8747;
+    font-weight: bold;
+    font-size: 16px;
+}

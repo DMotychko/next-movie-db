@@ -1,23 +1,23 @@
 import React from 'react';
-import Link from "next/link";
-import Image from "next/image";
-import logo from '../../img/logo.png'
-import userLogo from '../../img/user-logo.png'
+import './HeaderComponent.css'
+import MenuComponent from "@/components/menu/MenuComponent";
+import SearchComponent from "@/components/search/SearchComponent";
+import {roboto} from "@/fonts/roboto";
 
 const HeaderComponent = () => {
     return (
-        <header>
-            <Image src={logo} alt='logo' width={150} height={50}/>
-            <nav>
-                <ul>
-                    <li><Link href='/'>Home</Link></li>
-                    <li><Link href='/movies'>Movies</Link></li>
-                    <li><Link href='/genres'>Genres</Link></li>
-                    <li><Link href='/search'>Search</Link></li>
-                </ul>
-            </nav>
-            <Image src={userLogo} alt='logo' width={50} height={50}/>
-            <h4>denya</h4>
+        <header className='header-component'>
+            <div className='header-component-wrapper'>
+                <div>
+                    <img src="/img/logo.png" alt="logo-netflix" className='logo-netflix'/>
+                    <MenuComponent/>
+                </div>
+                <div className='user-info'>
+                    <SearchComponent/>
+                    <img src="/img/user-logo.png" alt="user-logo" className='user-logo'/>
+                    <h4 className={`${roboto.className} user-nickname`}>mt_denya</h4>
+                </div>
+            </div>
         </header>
     );
 };

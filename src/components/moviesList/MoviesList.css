@@ -1,0 +1,12 @@
+.movies-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.movies-list-wrapper {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+    max-width: 1500px;
+}

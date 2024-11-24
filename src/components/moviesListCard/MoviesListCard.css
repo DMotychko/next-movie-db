@@ -1,0 +1,32 @@
+.movies-list-card-link {
+    text-decoration: none;
+}
+.movies-list-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.movies-list-card:hover {
+    transform: scale(1.035);
+}
+.movies-list-card img {
+    width: 250px;
+    border-radius: 10px;
+    height: 375px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movies-list-card h3 {
+    width: 240px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.movies-list-card:hover {
+    transform: scale(1.035);
+}
+.movies-list-card:hover img {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
